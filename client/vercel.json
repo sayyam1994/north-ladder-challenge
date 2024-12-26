@@ -3,7 +3,7 @@
   "outputDirectory": "client/.next",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "destination": "https://north-ladder-challenge-server.vercel.app/:path*"
     }
   ]
