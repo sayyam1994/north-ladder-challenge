@@ -1,6 +1,7 @@
 {
   "buildCommand": "cd client && npm run build",
   "outputDirectory": "client/.next",
+  "installCommand": "npm install --force",
   "rewrites": [
     {
       "source": "/:path*",
