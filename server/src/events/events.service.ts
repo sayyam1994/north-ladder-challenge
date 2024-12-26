@@ -25,6 +25,12 @@ export class EventsService {
   findAll(filters: FilterEventsDto): Event[] {
     let events = Array.from(this.events.values())
 
+    if (filters.eventName) {
+      events = events.filter((event) =>
+        event.eventName.toLowerCase().includes(filters.eventName.toLowerCase()),
+      )
+    }
+
     if (filters.organizer) {
       events = events.filter((event) =>
         event.organizer.toLowerCase().includes(filters.organizer.toLowerCase()),
@@ -36,6 +42,14 @@ export class EventsService {
           event.location.city.toLowerCase() === filters.city.toLowerCase(),
       )
     }
+
+    if (filters.state) {
+      events = events.filter(
+        (event) =>
+          event.location.state.toLowerCase() === filters.state.toLowerCase(),
+      )
+    }
+
     if (filters.fromDate) {
       events = events.filter(
         (event) => new Date(event.eventDate) >= new Date(filters.fromDate),
