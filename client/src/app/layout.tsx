@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Event Management Platform',
-  description: 'Manage your events with ease'
+  description:
+    'UI for Event Management Platform for NorthLadder Coding Challenge'
 }
 
 export default function RootLayout({
