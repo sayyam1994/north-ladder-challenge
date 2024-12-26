@@ -44,8 +44,8 @@ A NestJS-based REST API for managing events with TypeScript support and Swagger 
 
 ```bash
 # Clone repository
-git clone [repository-url]
-cd event-platform
+git https://github.com/sayyam1994/north-ladder-challenge.git
+cd north-ladder-challenge/server
 
 # Install dependencies
 npm install
