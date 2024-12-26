@@ -13,7 +13,15 @@ A NestJS-based REST API for managing events with TypeScript support and Swagger 
 
 ## Tech Stack
 
+### Backend
+
 - NestJS
+- TypeScript
+
+### Frontend
+
+- Nextjs
+- React
 - TypeScript
 
 ## Data Structures
@@ -41,6 +49,8 @@ A NestJS-based REST API for managing events with TypeScript support and Swagger 
 ```
 
 ## Installation
+
+To access frontend visit this url:- https://north-ladder-challenge.vercel.app/
 
 ```bash
 # Clone repository
